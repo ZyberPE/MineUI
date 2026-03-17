@@ -1,0 +1,39 @@
+name: MineUI
+main: MineUI\Main
+version: 1.0.0
+api: 5.0.0
+author: ZyberPE
+description: Mine teleport UI with permissions, status display, and config customization
+
+commands:
+  mines:
+    description: Open the mines menu
+    usage: /mines
+    permission: mineui.command.mines
+
+  mine:
+    description: Teleport to a mine directly
+    usage: /mine <name>
+    permission: mineui.command.mine
+
+permissions:
+  mineui.command.mines:
+    description: Allows use of /mines
+    default: true
+
+  mineui.command.mine:
+    description: Allows use of /mine
+    default: true
+
+  # Example permissions for mines (you can add more or manage via PurePerms/LuckPerms)
+  mine.access.a:
+    description: Access to Mine A
+    default: true
+
+  mine.access.b:
+    description: Access to Mine B
+    default: false
+
+  mine.access.vip:
+    description: Access to VIP Mine
+    default: op
